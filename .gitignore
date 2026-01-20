@@ -35,7 +35,7 @@ nppBackup
 # Models
 models/*
 gpu/checkpoints/*
-
+data/
 # Python
 
 /.venv
