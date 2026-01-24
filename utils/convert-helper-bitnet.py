@@ -34,8 +34,8 @@ def main():
 
     preprocess_script = utils_dir / "preprocess-huggingface-bitnet.py"
     convert_script = utils_dir / "convert-ms-to-gguf-bitnet.py"
-    
-    llama_quantize_binary = project_root_dir / "build" / "bin" / "llama-quantize"
+
+    llama_quantize_binary = project_root_dir / "build" / "bin" / "Release" / "llama-quantize.exe" if os.name == 'nt' else project_root_dir / "build" / "bin" / "Release" / "llama-quantize"
 
     input_file = model_dir / "model.safetensors"
     input_backup_file = model_dir / "model.safetensors.backup"
@@ -108,14 +108,14 @@ def main():
                 preprocessed_output_file.unlink()
             except OSError as e:
                 print(f"Warning: Could not remove {preprocessed_output_file}: {e}")
-        
+
         if gguf_f32_output.exists():
             print(f"Removing f32 GGUF: {gguf_f32_output}")
             try:
                 gguf_f32_output.unlink()
             except OSError as e:
                 print(f"Warning: Could not remove {gguf_f32_output}: {e}")
-        
+
         if input_backup_file.exists():
             if not input_file.exists():
                 print(f"Restoring original '{input_file}' from '{input_backup_file}'")
