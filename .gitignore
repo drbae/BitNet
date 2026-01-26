@@ -35,13 +35,13 @@ nppBackup
 # Models
 models/*
 gpu/checkpoints/*
-data/
-# Python
 
+# Python
 /.venv
 __pycache__/
 */poetry.lock
 poetry.toml
 
+data/
 build/
 logs/
