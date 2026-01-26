@@ -12,3 +12,9 @@
 | bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       6 |       1 |         tg200 |         30.87 ± 0.21 |
 | bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       4 |       1 |         pp256 |         27.42 ± 0.19 |
 | bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       4 |       1 |         tg200 |         27.02 ± 0.47 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |      12 |       1 |         pp256 |         30.50 ± 0.22 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |      12 |       1 |         tg200 |         30.16 ± 0.95 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       6 |       1 |         pp256 |         30.48 ± 0.09 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       6 |       1 |         tg200 |         30.56 ± 0.19 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary |   1.71 GiB |     2.74 B | CPU        |       4 |       1 |         pp256 |         30.46 ± 0.12 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary |   1.71 GiB |     2.74 B | CPU        |       4 |       1 |         tg200 |         29.74 ± 1.46 |
