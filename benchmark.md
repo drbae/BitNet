@@ -16,5 +16,12 @@
 | bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |      12 |       1 |         tg200 |         30.16 ± 0.95 |
 | bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       6 |       1 |         pp256 |         30.48 ± 0.09 |
 | bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       6 |       1 |         tg200 |         30.56 ± 0.19 |
-| bitnet-b1.58 2B I2_S - 2 bpw ternary |   1.71 GiB |     2.74 B | CPU        |       4 |       1 |         pp256 |         30.46 ± 0.12 |
-| bitnet-b1.58 2B I2_S - 2 bpw ternary |   1.71 GiB |     2.74 B | CPU        |       4 |       1 |         tg200 |         29.74 ± 1.46 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       4 |       1 |         pp256 |         30.46 ± 0.12 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary    |   1.71 GiB |     2.74 B | CPU        |       4 |       1 |         tg200 |         29.74 ± 1.46 |
+
+변환: bf16 > gguf
+
+| model                          |       size |     params | backend    | threads | n_batch |          test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | ------: | ------: | ------------: | -------------------: |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary |   1.71 GiB |     2.74 B | CPU        |       6 |       1 |         pp256 |         30.39 ± 0.44 |
+| bitnet-b1.58 2B I2_S - 2 bpw ternary |   1.71 GiB |     2.74 B | CPU        |       6 |       1 |         tg200 |         30.47 ± 0.23 |
